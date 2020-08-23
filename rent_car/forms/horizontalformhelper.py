@@ -9,8 +9,8 @@ class HorizontalFormHelper(FormHelper):
     def __init__(self, *args, **kwargs):
         super(HorizontalFormHelper, self).__init__(*args, **kwargs)
         self.form_class = "form-horizontal animated fadeIn"
-        self.label_class = "col-lg-4 text-lg-right"
-        self.field_class = "col-lg-8"
+        self.label_class = "col-lg-3 text-lg-right"
+        self.field_class = "col-lg-9"
 
         self.form_tag = True
 

@@ -1,8 +1,9 @@
+from django.core.validators import MinLengthValidator
 from django.db import models
 
 
 class CarBrand(models.Model):
-    name = models.CharField(max_length=25, null=False, blank=False, unique=True)
+    name = models.CharField(max_length=25, null=False, blank=False, unique=True, validators=[MinLengthValidator])
 
     def __str__(self):
         return self.name
