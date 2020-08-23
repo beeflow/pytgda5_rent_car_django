@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "customer.apps.CustomerConfig",
     "car.apps.CarConfig",
     "rent_car.apps.RentCarConfig",
+    "crispy_forms",
 ]
 
 MIDDLEWARE = [
@@ -127,6 +128,5 @@ AUTH_USER_MODEL = "customer.Customer"
 CAR_STATUS_AVAILABLE = "264a52a1-e83b-4875-aae5-eea911b9e9c7"
 CAR_STATUS_RENT = "cc12c13c-f5e3-4420-aa29-f03bab18bcf5"
 
-# from uuid import uuid4
-# uuid4()
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 

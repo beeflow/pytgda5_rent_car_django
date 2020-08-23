@@ -1,32 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-<table>
-    <thead>
-    <tr>
-        <th>marka</th>
-        <th>model</th>
-        <th>nr rejestracyjny</th>
-        <th>status</th>
-        <th>opcje</th>
-    </tr>
-    </thead>
-    <tbody>
-    {% for object in object_list %}
-        <tr>
-            <td>{{ object.car.brand }}</td>
-            <td>{{ object.car.model.name }}</td>
-            <td>{{ object.car.register_number }}</td>
-            <td>{{ object.car.status }}</td>
-            <td></td>
-        </tr>
-    {% endfor %}
-    </tbody>
-</table>
-</body>
-</html>
+{% extends "base.html" %}
+{% block body %}
+    {% include "globals/form.html" %}
+{% endblock %}
